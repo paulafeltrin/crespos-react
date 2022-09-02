@@ -1,21 +1,14 @@
-import styled, { createGlobalStyle } from "styled-components";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import styled from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-`
 export const Footer = styled.footer`
         margin: 0 auto;
         max-width: 1080px;
         width: 100%;
         align-items: center;
+        padding-bottom: 5px;
 `
 export const Web= styled.div`
-    @media screen and (max-width: 1080px) and (min-width: 700px){
+    @media screen and (min-width: 700px){
         background: #9767A9;
         display: flex;
         justify-content: space-between;
@@ -35,7 +28,7 @@ export const P = styled.p`
     font-size: 0.7rem;
 `
 export const Arrow = styled.div`
-    @media screen and (max-width: 1080px) and (min-width: 700px){
+    @media screen and (min-width: 700px){
         display: flex;
         justify-content: space-evenly;
         width: 20vw;
